@@ -1,0 +1,41 @@
+.clearfix{
+	&:after{
+		content:'.';
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;//
+	}
+
+	*zoom:1;
+	overflow: hidden;
+}
+
+.all-center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	transform:translateX(-50%) translateY(-50%);
+}
+
+.flex{
+	display: -webkit-flex;
+	display: flex;
+	word-break:break-all;
+
+	.side-auto{
+		-webkit-flex:1;
+		flex:1;
+		display: block;
+	}
+}
+
+.abstract{
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	vertical-align: top;
+}
